@@ -1,0 +1,138 @@
+:root{
+    --border:.5vh;
+    --color1: rgb(32, 32, 32);
+}
+
+body{
+    user-select: none;
+    margin: 0;
+}
+
+
+#App{   
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    width: 50vh;
+    height: 70vh;
+    padding: 1vh;
+    background-color: rgba(16, 16, 16, 0.9);
+    border-radius: var(--border);
+    gap: 1.5vh; 
+    flex-direction: column;
+    transition: opacity 300ms;
+    opacity: 0;
+}
+#container.show{
+    opacity: 1;
+    
+}
+
+
+
+#task{
+    height: 8.5vh;
+    width: 50vh;
+    background-color: var(--color1);
+    border-radius: var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#task i{
+    font-size: 5vh;
+    opacity: .8;
+}
+#task i:hover{
+    font-size: 5vh;
+    opacity: 1;
+}
+
+#minigame-box{
+    width: 50vh;
+    height: 50vh;
+    /* background-color: var(--color1); */
+    display: flex;
+    gap: 2.5vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: var(--border);
+}
+.minigame-field{
+    opacity: .8;
+}
+.minigame-field:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.minigame-field[value='true']{
+    width: 15vh;
+    height: 15vh;
+    background-color: rgb(240, 240, 240);
+    border-radius: var(--border);
+}
+.minigame-field[value='false']{
+    width: 15vh;
+    height: 15vh;
+    background-color: rgb(52, 52, 52);
+    border-radius: var(--border);
+}
+
+
+.btn{
+    height: 8.5vh;
+    width: 50vh;
+    background-color: var(--color1);
+    border-radius: var(--border);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+
+
+.btn[value='false'] i{
+    font-size: 5vh;
+    opacity: .8;
+    color: red;
+}
+.btn[value='true'] i:hover{
+    font-size: 5vh; 
+    opacity: 1;
+    cursor: pointer;
+}
+.btn[value='true'] i{
+    font-size: 5vh;
+    opacity: 0.8;
+    color: rgb(37, 255, 37);
+    transition: color 300ms;
+}
+#icon{
+    height: 100%;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#timer-back{
+    width:50vh;
+    height: 1vh;
+    background-color: azure;
+    border-radius: var(--border);
+}
+#timer-value{
+    height: 1vh;
+    width: 1%;
+    background-color: aqua;
+    border-radius: var(--border);
+}
