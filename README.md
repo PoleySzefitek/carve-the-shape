@@ -3,7 +3,7 @@ a simple fivem ready minigame
 
 It's my first public script.
 I am still learning how to deal with this stuff, so It may be not the best
-If you  have found any bugs or errors / have any questions / know how to make this script better feel free to dm me on discord .poley 
+If you  have found any bugs or errors / have any questions / know how to make this script better feel free to dm me on discord _ .poley _  
 
 # [Preview](https://youtu.be/UbsBBfS5l3s)
 
